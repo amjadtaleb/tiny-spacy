@@ -5,7 +5,7 @@ RUN pip install --upgrade pip && pip install uv
 
 WORKDIR /venv
 RUN uv init
-RUN uv add spacy pip "fastapi[standard]"
+RUN uv add "spacy[transformers]" pip "fastapi[standard]"
 RUN uv run --with spacy -- spacy download en_core_web_md
 
 # ---- Runner stage ----
