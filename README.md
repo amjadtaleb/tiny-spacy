@@ -5,7 +5,7 @@ docker build -t spacy-server .
 
 Run
 ```sh
-docker run --rm -p 8000:8000 -v .:/app spacy-server:latest
+docker compose up
 ```
 
 Usage
